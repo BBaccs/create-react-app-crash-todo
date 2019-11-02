@@ -23,7 +23,7 @@ export class App extends Component {
     ]
   }
 
-  markComplete = (id) => {
+  toggleComplete = (id) => {
     this.setState({ todos: this.state.todos.map(todo => {
       if(todo.id === id) {
         todo.completed = !todo.completed
@@ -34,7 +34,10 @@ export class App extends Component {
 
   render() {
     return (
-      <Todos todos={ this.state.todos } markComplete={ this.markComplete }/>
+      <div>
+        <h1> To Scooby dOoO</h1>
+          <Todos todos={ this.state.todos } toggleComplete={ this.toggleComplete }/>
+      </div>
     )
   }
 }
