@@ -39,7 +39,7 @@ export class App extends Component {
   render() {
     return (
       <div>
-        <h1> To Scooby dOoO</h1>
+        <h1>To Scooby dOoO</h1>
           <Todos todos={ this.state.todos } toggleComplete={ this.toggleComplete } deleteTodo={this.deleteTodo } />
       </div>
     )
